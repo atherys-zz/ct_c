@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]);
+{
+  printf("Welcome in my suprematorCalculator 1.0 !\nBy AerysFeather\n\n\n");
+
+  sleep(2.5);
+
+  printf("What do you want to do ? (press the nuber)\n");
+
+  int choice = 0;
+  printf("-Addition(1)\n-Substraction(2)\n-Multiplication(3)\n-Division(4)\n");
+  scanf("%d", &choice);
+
+  float numberFirst = 0;
+  printf("Please enter the first number.");
+  scanf("%f", &numberFirst);
+
+  float numberSecond = 0;
+  printf("Please enter the second number.");
+  scandf("%f", &numberSecond);
+
+  int result = 0;
+  switch (choice)
+  {
+  case 1:
+    printf("%d + %f = %d", numberFirst, numberSecond, result);
+    break;
+  case 2:
+    printf("%d - %f = %d", numberFirst, numberSecond, result);
+    break;
+  case 3:
+    printf("%d * %f = %d", numberFirst, numberSecond, result);
+    break;
+  case 4:
+    printf("%d / %f = %d", numberFirst, numberSecond, result);
+    break;
+  }
+
+  return 0;
+}
